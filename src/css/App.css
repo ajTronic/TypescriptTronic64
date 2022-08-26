@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  height: 100vh;
+  color: white;
+  background-color: #22232b;
+  padding: 0 20vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+    color: red;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4em;
+}
+
+.nav .logo {
+  font-weight: bold;
+}
+
+.nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px;
+}
+
+.nav button {
+  cursor: pointer;
+  background-color: #6c05d3;
+  padding: 0.4em;
+  border: none;
+  color: white;
+  border-radius: 0.5em;
+  font-size: 1.05em;
+}
+
+.hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(100vh - 7em);
+}
+
+.hero-container .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-container .subheading {
+  font-weight: 500;
+  margin: 1em 0;
+}
+
+.hero-container .underline {
+  border-bottom: 3px solid #f44725;
+}
+
+.hero-container p {
+  margin-bottom: 1.5em;
+  width: calc(min(500px, 50vw));
+}
+
+@-webkit-keyframes fall {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-160deg);
+            transform: rotate(-160deg);
+  }
+}
+
+@keyframes fall {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-160deg);
+            transform: rotate(-160deg);
+  }
+}
+
+.hero-container .curved-underline {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.8, -0.5, 0.2, 1.4);
+  transition: -webkit-transform 0.3s cubic-bezier(0.8, -0.5, 0.2, 1.4);
+  transition: transform 0.3s cubic-bezier(0.8, -0.5, 0.2, 1.4);
+  transition: transform 0.3s cubic-bezier(0.8, -0.5, 0.2, 1.4), -webkit-transform 0.3s cubic-bezier(0.8, -0.5, 0.2, 1.4);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.hero-container .curved-underline:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  text-decoration: none;
+}
+
+.hero-container .curved-underline::after {
+  content: "";
+  position: relative;
+  bottom: 0.3ch;
+  right: 0.45ch;
+  display: block;
+  width: 3.5ch;
+  margin-left: 0.5ch;
+  padding-bottom: 5px;
+  border-bottom: 0.15em solid #aa57fd;
+  -webkit-transform: rotate(-3.06deg);
+          transform: rotate(-3.06deg);
+}
+
+.hero-container h1 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.hero-container .search-container {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: #2e3042 0 0 2rem;
+          box-shadow: #2e3042 0 0 2rem;
+}
+
+.hero-container .search-container .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #6c05d3;
+  width: 16rem;
+  height: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.3em 0.5em;
+  border-radius: 0.5em;
+}
+
+.hero-container .search-container .search.active {
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.hero-container .search-container .search input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-container .search-container .search input::-webkit-input-placeholder {
+  color: white;
+}
+
+.hero-container .search-container .search input:-ms-input-placeholder {
+  color: white;
+}
+
+.hero-container .search-container .search input::-ms-input-placeholder {
+  color: white;
+}
+
+.hero-container .search-container .search input::placeholder {
+  color: white;
+}
+
+.hero-container .search-container .search .search-btn {
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.hero-container .search-container .suggestions {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.hero-container .search-container .suggestions .suggestion {
+  cursor: pointer;
+  width: 16rem;
+  height: auto;
+  padding: 0.5em;
+  background-color: #5c04b4;
+}
+
+.hero-container .search-container .suggestions .suggestion:hover {
+  background-color: #6c05d3;
+}
+/*# sourceMappingURL=App.css.map */
