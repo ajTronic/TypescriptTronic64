@@ -20,9 +20,11 @@ export default class SearchBar extends Component<MyProps, { search: string }> {
 
   getSuggestions = (): string[] => {
     let searches = this.props.searches;
-    let result = searches.filter(
-        (searchItem) => this.state.search !== "" && searchItem.toLowerCase().includes(this.state.search)
-    )
+    let result = searches.filter((searchItem) => {
+      const isNotEmpty = this.state.search !== "";
+      const found = searchItem.toLowerCase().includes(this.state.search);
+      return found && isNotEmpty;
+    });
       
     return result;
   };
