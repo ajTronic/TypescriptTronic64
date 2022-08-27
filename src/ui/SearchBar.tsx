@@ -31,10 +31,8 @@ export default class SearchBar extends Component<MyProps, { search: string }> {
     const suggestions: string[] = this.getSuggestions();    
     const inputState = suggestions.length === 0 ? "" : "active";
 
-    const suggestionsUI: React.ReactElement[] = []
-    suggestions.forEach((sug, i) => {
-      suggestionsUI.push(<div key={i} className="suggestion">{sug}</div>)
-    })
+    let suggestionsUI: React.ReactElement[]
+    suggestionsUI = suggestions.map((sug, i) => <div key={i} className="suggestion">{sug}</div>)
 
     return (
       <div className="search-container">
