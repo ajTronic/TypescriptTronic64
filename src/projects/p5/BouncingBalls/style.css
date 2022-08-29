@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+    color: white;
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 500;
+    animation: 5 swal2-animate-error-icon .5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.swal2-container.swal2-center > .swal2-popup {
+  background-color: transparent;
+}
+
+[class^="swal2"] {
+  color: white;
+}
+
+.swal2-icon-content {
+  font-family: monospace;
+}
+
+.swal2-popup {
+    color: white !important;
+}
