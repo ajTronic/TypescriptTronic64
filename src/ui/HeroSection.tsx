@@ -1,7 +1,10 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import projects from "../projects.json";
 
 const HeroSection: React.FC = () => {
+  const projectNames = projects.map((p) => p.name);
+
   return (
     <>
       <div className="hero-container">
@@ -18,17 +21,10 @@ const HeroSection: React.FC = () => {
           The only online website for well, everything.
         </h4>
         <p>
-          Need a game to play with your friends? Check out one of our React projects!
-          Want to see a cool effect? Search for p5.js.
+          Need a game to play with your friends? Check out one of our React
+          projects! Want to see a cool effect? Search for p5.js.
         </p>
-        <SearchBar
-          searches={[
-            "Bouncing balls",
-            "Alien Fractions",
-            "Typewriter Effect",
-            "Tic Tac Toe",
-          ]}
-        />
+        <SearchBar searches={projectNames} />
       </div>
     </>
   );

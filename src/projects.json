@@ -1,0 +1,42 @@
+[
+  {
+    "name": "3d Fox",
+    "description": "This is a 3d fox written in three.js.",
+    "lib": "THREE.JS"
+  },
+  {
+    "name": "Bouncing Balls",
+    "description": "This project was written in p5.js. It is a simple bouncing ball game.",
+    "lib": "p5.js"
+  },
+  {
+    "name": "Tic Tac Toe",
+    "description": "This is a Tic Tac Toe game written in React.js. It features an unbeatable AI.",
+    "lib": "ReactJS"
+  },
+  {
+    "name": "Alien Fractions",
+    "description": "These are alien fractions. They are insanely cool, but if you stare at them too long the aliens will beam into your eyeballs.",
+    "lib": "p5.js"
+  },
+  {
+    "name": "Rain",
+    "description": "Blue rain in p5.js. The colours of each drop is slightly different. We fix the red and blue components and vary the green component. ",
+    "lib": "p5.js"
+  },
+  {
+    "name": "Binary Counter",
+    "description": "This is a binary counter written in JavaScript. It contains toggles that make a binary number. The binary number is then converted into decimal.",
+    "lib": "Vannila Javascript"
+  },
+  {
+    "name": "The Matrix Effect",
+    "description": "The Matrix Effect in p5.js. Letters will rain down your monitor making a wonderfull effect.",
+    "lib": "p5.js"
+  },
+  {
+    "name": "Typewriter",
+    "description": "Javascript Typewriter. You can type in the text box and a text will be displayed as if you were using a typewriter.",
+    "lib": "Vannila Javascript"
+  }
+]
