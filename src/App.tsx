@@ -5,10 +5,10 @@ import Nav from "./ui/TopNav"
 
 const App : React.FC = () => {
   return (
-    <>
+    <div className='app'>
       <Nav/>
       <HeroSection/>
-    </>
+    </div>
   )
 }
 

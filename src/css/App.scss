@@ -6,14 +6,16 @@ $secondary: #f44725;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+.app {
     font-family: Roboto, sans-serif;
     height: 100vh;
     color: white;
     background-color: #22232b;
     padding: 0 20vw;
+    width: 100%;
 }
 
 a {
