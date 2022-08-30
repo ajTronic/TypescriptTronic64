@@ -6,11 +6,18 @@
           box-sizing: border-box;
 }
 
+body, #root {
+  height: 100vh;
+}
+
+html, .home {
+  background-color: #22232b;
+}
+
 .home {
   font-family: Roboto, sans-serif;
-  height: 100vh;
+  height: 100%;
   color: white;
-  background-color: #22232b;
   padding: 0 20vw;
   width: 100%;
 }
@@ -81,7 +88,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: calc(100vh - 7em);
+  height: calc(100% - 7em);
 }
 
 .hero-container .line {
@@ -174,18 +181,16 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   background-color: #6c05d3;
-  width: 16rem;
-  height: 2em;
+  width: 16.3rem;
+  height: 2.4em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0.3em 0.5em;
   border-radius: 0.5em;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
 }
 
 .hero-container .search-container .search.active {
@@ -237,7 +242,7 @@ a:hover {
 
 .hero-container .search-container .suggestions .suggestion {
   cursor: pointer;
-  width: 16rem;
+  width: 16.3rem;
   height: auto;
   padding: 0.5em;
   background-color: #5c04b4;

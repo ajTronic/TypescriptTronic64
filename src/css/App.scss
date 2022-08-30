@@ -9,11 +9,18 @@ $secondary: #f44725;
     box-sizing: border-box;
 }
 
+body, #root {
+    height: 100vh;
+}
+
+html, .home {
+    background-color: #22232b;
+}
+
 .home {
     font-family: Roboto, sans-serif;
-    height: 100vh;
+    height: 100%;
     color: white;
-    background-color: #22232b;
     padding: 0 20vw;
     width: 100%;
 }
@@ -65,7 +72,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc(100vh - 7em);
+    height: calc(100% - 7em);
 
     .line {
         display: flex;
@@ -142,13 +149,12 @@ a {
             display: flex;
             background-color: $primay;
             // width: -moz-fit-content;
-            width: 16rem;
-            height: 2em;
+            width: 16.3rem;
+            height: 2.4em;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             padding: 0.3em 0.5em;
             border-radius: $br;
-            box-sizing: content-box;
 
             &.active {
                 border-radius: $br $br 0 0;
@@ -182,7 +188,7 @@ a {
 
             .suggestion {
                 cursor: pointer;
-                width: 16rem;
+                width: 16.3rem;
                 height: auto;
                 padding: 0.5em;
                 background-color: #5c04b4;
