@@ -184,6 +184,8 @@ a:hover {
           justify-content: space-between;
   padding: 0.3em 0.5em;
   border-radius: 0.5em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .hero-container .search-container .search.active {

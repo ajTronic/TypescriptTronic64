@@ -137,6 +137,7 @@ a {
         $br: 0.5em;
         box-shadow: #2e3042 0 0 2rem;
 
+
         .search {
             display: flex;
             background-color: $primay;
@@ -147,6 +148,7 @@ a {
             justify-content: space-between;
             padding: 0.3em 0.5em;
             border-radius: $br;
+            box-sizing: content-box;
 
             &.active {
                 border-radius: $br $br 0 0;
