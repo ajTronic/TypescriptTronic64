@@ -1,14 +1,10 @@
 import React from 'react'
 import './css/App.css'
-import HeroSection from './ui/HeroSection'
-import Nav from "./ui/TopNav"
+import Home from "./ui/Home"
 
 const App : React.FC = () => {
   return (
-    <div className='app'>
-      <Nav/>
-      <HeroSection/>
-    </div>
+    <Home/>
   )
 }
 
